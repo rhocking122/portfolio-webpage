@@ -1,13 +1,16 @@
 :root {
-    --green: rgb(0,104,40);
-    --cream-white: rgba(243,244,227,1);
-    --gray: #a2a2a2;
-    --paper-white: #e3e4e4;
-    --black: #282828;
+  --green: rgb(0, 104, 40);
+  --cream-white: rgb(243, 244, 227);
+  --gray-background: #a2a2a2;
+  --paper-white: #e3e4e4;
+  --black: #282828;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family:  -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--gray-background);
+  color: var(--black);
 }
