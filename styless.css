@@ -13,4 +13,46 @@ body {
     Ubuntu, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: var(--gray-background);
   color: var(--black);
+  box-sizing: border-box;
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--green);
+  border-radius: 40%;
+  opacity: 1;
+  width: 450px;
+  height: 50px;
+   /* padding: 10px 20px;  */
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.portrait {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
