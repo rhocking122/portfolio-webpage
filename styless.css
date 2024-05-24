@@ -44,8 +44,6 @@ body {
 }
 
 .hero-img {
-  /* display: flex;
-  justify-content: center; */
   border-radius: 30px;
   width: 100%;   /* Ensures that the image will take up the space of the full .hero-container*/
   height: 100%;
@@ -54,13 +52,13 @@ body {
 
 .navbar-section {
   display: flex;
-  justify-content: initial;
+  justify-content: center;
+  width: 100%;
   position: absolute;
-  padding: 10px;
-  top: 10px;
+  padding: 10px 20px;
+  top: -5px;
   z-index: 15;
-  line-height: 40px;
-  border-color: var(--paper-white);
+  line-height: 30px;
   border-radius: 30px;
 }
 
@@ -69,25 +67,32 @@ body {
   text-align: center;
   display: flex;
   flex-direction: row;
-  font-size: larger;
+  font-size: large;
   justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
   z-index: 8;
   border-radius: 30px;
-  margin: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
+  border: 2px solid var(--paper-white);
+  padding-left: 10px;
+  padding-right: 10px;
  }
 
- .nav-links {
+ .nav-link {
   color: var(--paper-white);
   font-style: none;
- }
-
- .navbar a {
-  color: var(--paper-white);
-  font-style: none;
+  font-size: 1rem;
   text-decoration: none;
-  font-weight: 600;
-
+  font-style: none;
+  position: relative;
+  padding: 0px 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  border-radius: 20px;
  }
+
+.nav-link:hover {
+  background-color: var(--cream-white);
+  color: var(--black);
+  transform: scale(0.8);
+  border-radius: 20px;
+  border: 1px solid var(--black);
+}
