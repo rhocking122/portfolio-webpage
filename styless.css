@@ -27,6 +27,8 @@ body {
   box-sizing: border-box;
 }
 
+/* Heor container Section */
+
 .hero-container {
   display: flex;
   align-items: center;
@@ -42,7 +44,40 @@ body {
 }
 
 .hero-img {
+  /* display: flex;
+  justify-content: center; */
   border-radius: 30px;
-  width: 100%;
+  width: 100%;   /* Ensures that the image will take up the space of the full .hero-container*/
   height: 100%;
+  z-index: 10;
 }
+
+.navbar-section {
+  display: flex;
+  justify-content: initial;
+  position: absolute;
+  padding: 10px;
+  top: 10px;
+  z-index: 15;
+  line-height: 40px;
+  border-color: var(--paper-white);
+  border-radius: 30px;
+}
+
+ .navbar {
+  background-color: var(--green);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  font-size: larger;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 8;
+  border-radius: 30px;
+  margin: 5px;
+ }
+
+ .nav-links {
+  color: var(--paper-white);
+  font-style: none;
+ }
