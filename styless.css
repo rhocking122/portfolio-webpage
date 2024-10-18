@@ -1,118 +1,33 @@
-:root {
-  --green: #006828;
-  --cream-white: rgb(243, 244, 227);
-  --gray-background: #a2a2a2;
-  --paper-white: #e3e4e4;
-  --black: #282828;
-}
-
-body {
-  margin: 0;
+*{
   padding: 0;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Ubuntu, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: var(--green);
-  color: var(--black);
   box-sizing: border-box;
+  font-family: 'poppins';
 }
 
-.body-container {
-  background-color: var(--green);
-  width: 100vw;
+.container {
+  width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 45px; 
-  box-sizing: border-box;
-}
-
-/* Heor container Section */
-
-.hero-container {
+  background-color: #ccc;
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  box-sizing: border-box;
-  background-color: var(--cream-white);
-  border-radius: 40px;
-  width: 100%; /* Ensure it takes up available width */
-  max-width: 2000px; /* Set a maximum width */
-  height: 700px;
-  max-height: 800px;
-  top: -60px;
+  justify-self: center;
 }
 
-.hero-img {
-  border-radius: 30px;
-  width: 100%;   /* Ensures that the image will take up the space of the full .hero-container*/
-  height: 100%;
-  z-index: 10;
-}
-
-.navbar-section {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  position: absolute;
-  padding: 10px 20px;
-  top: -5px;
-  z-index: 15;
-  line-height: 30px;
-  border-radius: 30px;
-  max-width: 90%;
-}
-
- .navbar {
-  position: absolute;
-  background-color: var(--green);
+.content {
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  font-size: large;
-  justify-content: space-between;
-  gap: 20px;
-  z-index: 8;
-  border-radius: 30px;
-  border: 2px solid var(--paper-white);
-  padding-left: 10px;
-  padding-right: 10px;
-  max-width: 90%;
- }
-
- .nav-link {
-  color: var(--paper-white);
-  font-style: none;
-  font-size: 1.5rem;
-  text-decoration: none;
-  font-style: none;
-  position: relative;
-  padding: 5px;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  border-radius: 20px;
- }
-
-.nav-link:hover {
-  background-color: var(--cream-white);
-  color: var(--black);
-  transform: scale(0.8);
-  border-radius: 20px;
-  border: 1px solid var(--black);
-  padding: 0px 10px;
 }
 
-.hero-text {
-  font-family: ewert;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  z-index: 10;
-  color: var(--green);
-  letter-spacing: 1;
-  font-size: 5vw;
-  width: 100%;
-  height: 100%;
+.content h2{
+  font-size: 95px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.content a{
+  font-size: 23px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 15px 25px;
+  border-radius: 50px;
 } 
