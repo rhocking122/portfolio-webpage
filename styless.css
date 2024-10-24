@@ -3,7 +3,8 @@
   --dark-lighter: #242424;
   --light: #242424;
   --light-darker: #848484;
-  --accent: #67fd67;
+  --accent-green: #67fd67;
+  --accent-pink: #ffb288;
   --cream: #eaddca;
 }
 
@@ -92,13 +93,13 @@
 .bar{
   width: 50px;        /* Adjust the width to control the length of the bar */
   height: 4px;        /* Height of the bar */
-  background-color: var(--accent);  /* Color of the bar (black in this case) */
+  background-color: #ffb288; 
   margin: 10PX auto 20px;
   border-radius: 50px;
 }
 
 .highlight {
-  color: var(--accent);
+  color: #ffb288;
 }
 
 .subtitle {
